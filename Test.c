@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include <stdbool.h>
+#include "add.h"
 
 bool is_prime(int n) // 判断一个数是否是素数
 {
@@ -54,17 +55,12 @@ int binary_search(int arr[], int n, int key) // 二分查找
     return -1;
 }
 
-void add(int* p) // 指针的使用自增
-{
-    (*p)++;
-}
-
 int main()
 {
     int len = strlen("hello");
     int a = 10;
     int b = 20;
-
+	len = Add(a, b);
     printf("%d\n", len); // 5
     system("pause");
     return 0;
