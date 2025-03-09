@@ -55,15 +55,22 @@ int binary_search(int arr[], int n, int key) // ¶ş·Ö²éÕÒ
 	return -1;
 }
 
+void print(int num)
+{
+	if (num > 9)
+	{
+		print(num / 10);
+	}
+	printf("%d ", num % 10);
+}
+
 int main()
 {
-	unsigned int num = 0;
-	scanf_s("%u", &num);
-	while (num)
-	{
-		printf("%u", num % 10);
-		num /= 10;
-	}
+	int num;
+	scanf_s("%d", &num);
+	print(num);
+
+
 	system("pause");
 	return 0;
 }
