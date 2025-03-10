@@ -3,21 +3,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include <stdbool.h>
-#include "add.h"
-
-bool is_prime(int n) // 判断一个数是否是素数
-{
-	int j = 0;
-	for (j = 2; j <= sqrt(n); j++)
-	{
-		if (n % j == 0)
-		{
-			return 0;
-		}
-	}
-
-	return 1;
-}
+#include "mymath.h"
 
 bool is_year(int year) // 判断是不是闰年 规则1：年份能被4整除但不能被100整除；规则2：年份能被400整除
 {
@@ -87,12 +73,33 @@ int fac(int n)	//求阶乘
 	}
 }
 
+int count = 0;
+
+int Fib(int n)
+{
+	if (n == 3)
+	{
+		count++;
+	}
+
+	if (n <= 2)
+	{
+		return 1;
+	}
+	else
+	{
+		return Fib(n - 1) + Fib(n - 2);
+	}
+}
+
 int main()
 {
 	int num = 0;
-	num = fac(5);
-	printf("%d", num);
-
+	int n = 0;
+	scanf_s("%d", &n);
+	num = Fib(n);
+	printf("%d\n", num);
+	printf("%d", count);
 	system("pause");
 	return 0;
 
