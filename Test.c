@@ -64,12 +64,22 @@ void print(int num)
 	printf("%d ", num % 10);
 }
 
+int my_strlen(char* str)	//¼ÆËã×Ö·û´®³¤¶È
+{
+	int count = 0;
+	while (*str != '\0')
+	{
+		count++;
+		str++;
+	}
+	return count;
+}
+
 int main()
 {
-	int num;
-	scanf_s("%d", &num);
-	print(num);
-
+	char arr[] = "hello world";
+	int len = my_strlen(arr);
+	printf("%d\n", len);
 
 	system("pause");
 	return 0;
