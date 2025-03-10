@@ -75,11 +75,23 @@ int my_strlen(char* str)	//计算字符串长度
 	return count;
 }
 
+int fac(int n)	//求阶乘
+{
+	if (n <= 1)
+	{
+		return 1;
+	}
+	else
+	{
+		return n * fac(n - 1);
+	}
+}
+
 int main()
 {
-	char arr[] = "hello world";
-	int len = my_strlen(arr);
-	printf("%d\n", len);
+	int num = 0;
+	num = fac(5);
+	printf("%d", num);
 
 	system("pause");
 	return 0;
