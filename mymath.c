@@ -19,7 +19,7 @@ bool is_prime(int n) // 判断一个数是否是素数
 	return 1;
 }
 
-int Fib(int n)
+int Fib(int n)	//斐波那契数列
 {
 	int a = 1;
 	int b = 1;
@@ -43,4 +43,11 @@ int Fib(int n)
 	{
 		return Fib(n - 1) + Fib(n - 2);
 	}*/ //递归实现
+}
+
+void Swap(int* a, int* b)
+{
+	int temp = *a;
+	*a = *b;
+	*b = temp;
 }
