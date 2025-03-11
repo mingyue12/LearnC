@@ -21,7 +21,7 @@
     <ClCompile Include="Test.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="add.c">
+    <ClCompile Include="mymath.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
