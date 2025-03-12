@@ -1,4 +1,5 @@
 #include<stdbool.h>
+#include<stdio.h>
 
 int Add(int a, int b)	//两数之和函数的定义
 {
@@ -115,7 +116,7 @@ void print_int(int num)	//递归打印整数的每一位
 {
 	if (num > 9)
 	{
-		print(num / 10);
+		print_int(num / 10);
 	}
-	printf("%d ", num % 10);
+	printf_s("%d ", num % 10);
 }
