@@ -84,8 +84,9 @@ int main()
 	scanf_s("%d", &n);
 	num = Fib(n);
 	printf("%d\n", num);
+
+
+
 	system("pause");
 	return 0;
-
-
 }
