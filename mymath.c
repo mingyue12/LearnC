@@ -120,3 +120,21 @@ void print_int(int num)	//递归打印整数的每一位
 	}
 	printf_s("%d ", num % 10);
 }
+
+void bubble_sort(int arr[]) // 冒泡排序
+{
+	int sz = sizeof(arr) * sizeof(arr[0]);	//数组长度
+	int i, j;
+	for (i = 0; i < sz - 1; i++)
+	{
+		for (j = 0; j < sz - 1 - i; j++)
+		{
+			if (arr[j] > arr[j + 1])
+			{
+				int tmp = arr[j];
+				arr[j] = arr[j + 1];
+				arr[j + 1] = tmp;
+			}
+		}
+	}
+}

@@ -16,3 +16,5 @@ bool is_year(int year); // ÅĞ¶ÏÊÇ²»ÊÇÈòÄê ¹æÔò1£ºÄê·İÄÜ±»4Õû³ıµ«²»ÄÜ±»100Õû³ı£»¹
 int binary_search(int arr[], int n, int key); // ¶ş·Ö²éÕÒ
 
 void print_int(int num);	//µİ¹é´òÓ¡ÕûÊıµÄÃ¿Ò»Î»
+
+void bubble_sort(int arr[]); // Ã°ÅİÅÅĞò
