@@ -17,4 +17,4 @@ int binary_search(int arr[], int n, int key); // 二分查找
 
 void print_int(int num);	//递归打印整数的每一位
 
-void bubble_sort(int arr[]); // 冒泡排序
+void bubble_sort(int arr[],int sz); // 冒泡排序
